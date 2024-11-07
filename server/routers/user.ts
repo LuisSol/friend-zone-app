@@ -1,10 +1,10 @@
+import userRepository from "@/server/repositories/UserRepository";
 import { router, procedure } from "../trpc";
 import { getUserData } from "../schemas/inputs";
 
 export const userRouter = router({
   getUsers: procedure.query(async () => {
-    // TODO All users
-    return [];
+    return await userRepository.getUsers();
   }),
   getProfile: procedure.input(getUserData).query(async ({ input }) => {
     const {

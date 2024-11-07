@@ -1,0 +1,8 @@
+.container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.title {
+  margin: var(--spacing-2) var(--spacing-4);
+}
