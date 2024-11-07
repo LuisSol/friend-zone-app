@@ -1,0 +1,19 @@
+.container {
+  border: 1px var(--palette-secondary-dark) solid;
+  padding: var(--spacing-4) var(--spacing-3);
+  border-radius: var(--cards-border-radius);
+  position: relative;
+  width: 150px;
+  height: 240px;
+  padding-top: 170px;
+  padding-bottom: 0;
+}
+
+.container img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-top-left-radius: var(--cards-border-radius);
+  border-top-right-radius: var(--cards-border-radius);
+}
