@@ -7,17 +7,13 @@ export const userRouter = router({
     return await userRepository.getUsers();
   }),
   getProfile: procedure.input(getUserData).query(async ({ input }) => {
-    const {
-      /* userId */
-    } = input;
-    //TODO sent a profile
-    return {};
+    const { userId } = input;
+
+    return await userRepository.getProfile(userId);
   }),
   getFriends: procedure.input(getUserData).query(async ({ input }) => {
-    const {
-      /* userId */
-    } = input;
-    // TODO get de user friends
-    return [];
+    const { userId } = input;
+
+    return await userRepository.getUserFriends(userId);
   }),
 });
