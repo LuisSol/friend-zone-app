@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import Header from "@/components/ui/Header";
+import TrpcProvider from "@/components/providers/trpc";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <TrpcProvider>{children}</TrpcProvider>
       </body>
     </html>
   );
