@@ -1,6 +1,32 @@
 :root {
-  --background: #ffffff;
+  --background-default: #f0f2f5;
+  --background-paper: #ffffff;
+  --palette-primary-main: #1877f2;
+  --palette-primary-light: #4293ff;
+  --palette-primary-dark: #0e5fcc;
+  --palette-primary-contrastText: #ffffff;
+  --palette-secondary-main: #e4e6eb;
+  --palette-secondary-light: #f0f2f5;
+  --palette-secondary-dark: #bcc0c4;
+  --palette-secondary-contrastText: #0e5fcc;
   --foreground: #171717;
+  --text-primary: #050505;
+  --text-secondary: #65676b;
+  --cards-border-radius: 8px;
+  --cards-box-shadow: "0 1px 2px rgba(0, 0, 0, 0.2)";
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 32px;
+  --palette-common-white: #ffffff;
+  --palette-common-black: #000000;
+}
+
+button {
+  text-transform: none;
 }
 
 html,
@@ -11,8 +37,9 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-default);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

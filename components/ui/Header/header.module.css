@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(70px, 300px) 1fr 300px;
+  align-items: center;
+  width: 100vw;
+  box-shadow: var(--cards-box-shadow);
+  background-color: var(--background-paper);
+}
+
+.logo {
+  display: flex;
+  margin: var(--spacing-2) var(--spacing-3);
+  width: 45px;
+  height: 45px;
+  background-color: var(--palette-primary-dark);
+  border-radius: 50%;
+  color: var(--palette-common-white);
+  font-weight: 900;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.catch-phrase {
+  margin-right: var(--spacing-3);
+  justify-self: flex-end;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
